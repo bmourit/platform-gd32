@@ -1,7 +1,8 @@
 {
   "name": "gd32",
+  "version": "1.0.0",
   "title": "GD GD32",
-  "description": "GigaDevice GD32 MCU has many years of industry-leading design experience, as it has already launched a huge variety of 32bit general purpose microcontrollers, based on Arm Cortex-M and RISC-V cores. GigaDevice continues to empower various industry fields, providing high performance and rich in resources MCUs.",
+  "description": "GigaDevice GD32 32-bit Arm Cortex-M4 MCUs",
   "homepage": "http://www.gd32mcu.com/en/product",
   "license": "Apache-2.0",
   "keywords": [
@@ -16,9 +17,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CommunityGD32Cores/platform-gd32"
+    "url": "https://github.com/bmourit/platform-gd32.git"
   },
-  "version": "1.0.0",
   "frameworks": {
     "mbed": {
       "package": "framework-mbed",
@@ -30,15 +30,15 @@
     "spl": {
       "package": "framework-spl-gd32",
       "script": "builder/frameworks/spl.py",
-      "description": "The GigaDevice Standard Peripheral Library provides a set of functions for handling the peripherals on the GD32 family of microcontrollers.",
+      "description": "The GigaDevice Standard Peripheral Library (SPL).",
       "homepage": "http://www.gd32mcu.com/en/download/",
-      "title": "Standard Peripheral Library"
+      "title": "GD32 SPL"
     },
     "arduino": {
       "package": "framework-arduinogd32",
       "script": "builder/frameworks/arduino.py",
       "description": "Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences",
-      "homepage": "https://github.com/CommunityGD32Cores/ArduinoCore-GD32",
+      "homepage": "https://github.com/bmourit/ArduinoCore-GD32",
       "title": "Arduino"
     },
     "wifi-sdk": {
@@ -53,7 +53,7 @@
     "toolchain-gccarmnoneeabi": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "~1.90201.0",
+      "version": "~1.120301.0",
       "optionalVersions": [
         "~1.60301.0",
         "~1.80201.0",
@@ -78,8 +78,7 @@
     "framework-arduinogd32": {
       "type": "framework",
       "optional": true,
-      "owner": "maxgerhardt",
-      "version": "https://github.com/CommunityGD32Cores/ArduinoCore-GD32.git"
+      "version": "https://github.com/bmourit/Arduino_Core_GD32.git"
     },
     "framework-wifi-sdk-gd32": {
       "type": "framework",

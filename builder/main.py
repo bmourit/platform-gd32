@@ -69,7 +69,7 @@ def s_eval(input_string):
 def _update_max_upload_size(env):
     # only invoked for wifi-sdk projects
     # get the generated linkerscript again
-    genned_ldscript = join(env.subst("$BUILD_DIR"), "nspe_gdm32_ns_processed.ld")
+    genned_ldscript = join(env.subst("$BUILD_DIR"), "nspe_gd32_ns_processed.ld")
     if not isfile(genned_ldscript):
         print("Warning: Failed to retrieve linker script for size update from file '%s'." % str(genned_ldscript))
         return

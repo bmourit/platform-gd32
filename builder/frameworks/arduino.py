@@ -19,12 +19,10 @@ Arduino Wiring-based Framework allows writing cross-platform software to
 control devices attached to a wide range of Arduino boards to create all
 kinds of creative coding, interactive objects, spaces or physical experiences.
 
-http://www.stm32duino.com
 """
 
 import sys
 from os.path import join, isfile
-
 from SCons.Script import DefaultEnvironment, SConscript
 
 env = DefaultEnvironment()
