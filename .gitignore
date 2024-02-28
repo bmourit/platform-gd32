@@ -3,3 +3,5 @@ __pycache__/
 generated_output/
 generated_output_arduino/
 variants/
+.DS_Store
+
