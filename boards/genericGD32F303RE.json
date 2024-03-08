@@ -18,7 +18,7 @@
       ]
     ],
     "spl_sub_series": "HD",
-    "variant": "Generic_GD32F303Rx"
+    "variant": "GD32F303RE_GENERIC"
   },
   "debug": {
     "jlink_device": "GD32F303RE",
