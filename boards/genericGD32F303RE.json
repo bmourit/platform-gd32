@@ -2,7 +2,7 @@
   "build": {
     "core": "gd32",
     "cpu": "cortex-m4",
-    "extra_flags": "-DGD32F3 -DGD32F303 -DGD32F30x -DGD32F30X_HD",
+    "extra_flags": "-DGD32F3 -DGD32F303 -DGD32F30x -DGD32F30X_HD -DGD32F303RE",
     "f_cpu": "120000000L",
     "mcu": "gd32f303ret6",
     "spl_series": "GD32F30x",
@@ -18,7 +18,7 @@
       ]
     ],
     "spl_sub_series": "HD",
-    "variant": "GD32F303RE_GENERIC"
+    "variant": "Generic_GD32F303Rx"
   },
   "debug": {
     "jlink_device": "GD32F303RE",
