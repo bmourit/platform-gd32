@@ -78,7 +78,7 @@
     "framework-arduinogd32": {
       "type": "framework",
       "optional": true,
-      "version": "https://github.com/bmourit/Arduino_Core_GD32.git"
+      "version": "https://github.com/bmourit/ArduinoCore-GD32.git"
     },
     "framework-wifi-sdk-gd32": {
       "type": "framework",
