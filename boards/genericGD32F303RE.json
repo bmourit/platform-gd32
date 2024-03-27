@@ -2,7 +2,7 @@
   "build": {
     "core": "gd32",
     "cpu": "cortex-m4",
-    "extra_flags": "-DGD32F3 -DGD32F303 -DGD32F30x -DGD32F30X_HD -DGD32F303RE",
+    "extra_flags": "-DGD32F3 -DGD32F303 -DGD32F30x -DGD32F30X_HD -DGD32F303RE -DARDUINO_ARCH_GD32",
     "f_cpu": "120000000L",
     "mcu": "gd32f303ret6",
     "spl_series": "GD32F30x",
@@ -33,8 +33,8 @@
     ]
   },
   "frameworks": [
-    "spl",
-    "arduino,"
+    "arduino",
+    "spl"
   ],
   "name": "GD32F303RE (64k RAM, 512k Flash)",
   "upload": {

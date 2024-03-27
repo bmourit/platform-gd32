@@ -53,11 +53,12 @@
     "toolchain-gccarmnoneeabi": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "~1.120301.0",
+      "version": ">=1.60301.0,<1.80000.0",
       "optionalVersions": [
         "~1.60301.0",
         "~1.80201.0",
-        "~1.90201.0"
+        "~1.90201.0",
+        "~1.120301.0"
       ]
     },
     "framework-mbed": {
@@ -66,7 +67,8 @@
       "owner": "platformio",
       "version": "~6.60900.0",
       "optionalVersions": [
-        "~6.51506.0"
+        "~6.51506.0",
+        "~6.61700.0"
       ]
     },
     "framework-spl-gd32": {
@@ -78,6 +80,7 @@
     "framework-arduinogd32": {
       "type": "framework",
       "optional": true,
+      "owner": "bmourit",
       "version": "https://github.com/bmourit/ArduinoCore-GD32.git"
     },
     "framework-wifi-sdk-gd32": {
