@@ -1,0 +1,24 @@
+{
+  "name": "Generic GD32F303RE Series (64k RAM, 512k Flash)",
+  "url": "https://www.gigadevice.com/microcontroller/gd32f303ret6/",
+  "vendor": "GigaDevice",
+  "frameworks": ["arduino", "spl"],
+  "build": {
+    "variant": "generic_gd32f303re",
+    "extra_flags": "-DGD32F3 -DGD32F303 -DGD32F30x -DGD32F30X_HD -DGD32F303RE -DARDUINO_ARCH_GD32",
+    "core": "gd32",
+    "cpu": "cortex-m4",
+    "f_cpu": "120000000L",
+    "mcu": "gd32f303ret6",
+    "spl_series": "GD32F30x",
+    "series": "GD32F303",
+    "spl_sub_series": "HD",
+  },
+  "upload": {
+    "maximum_ram_size": 65536,
+    "maximum_size": 524288,
+  },
+  "debug": {
+    "svd_path": "GD32F30x_HD.svd"
+  },
+}

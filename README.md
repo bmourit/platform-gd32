@@ -2,7 +2,7 @@
 
 ## Description
 
-PlatformIO platform implementation for GD32F, GD32E, GD32W and GD32C type chips. Work in progress.
+[PlatformIO](https://platformio.org) platform implementation for GD32F, GD32E, GD32W and GD32C type chips. Work in progress.
 
 ## Supported boards
 
@@ -26,6 +26,7 @@ All ARM-based GD32 microcontrollers are supported through `genericGD32...` board
 
 ## How to use
 
+[Install PlatformIO](https://platformio.org)
 See example projects at https://github.com/CommunityGD32Cores/gd32-pio-projects. 
 
 The platform can be installed manually using `pio platform install https://github.com/CommunityGD32Cores/platform-gd32.git` on [the CLI](https://docs.platformio.org/en/latest/integration/ide/vscode.html#platformio-core-cli). This is done automatically when compiling one of the example projects. 

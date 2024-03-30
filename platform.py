@@ -15,11 +15,11 @@
 import copy
 import json
 import os
-
-from platform import system
+import sys
 
 from platformio.managers.platform import PlatformBase
-from platformio.util import get_systype
+
+IS_WINDOWS = sys.platform.startswith("win")
 
 class Gd32Platform(PlatformBase):
 
@@ -114,7 +114,7 @@ class Gd32Platform(PlatformBase):
                             "-port", "2331"
                         ],
                         "executable": ("JLinkGDBServerCL.exe"
-                                       if system() == "Windows" else
+                                       if IS_WINDOWS else
                                        "JLinkGDBServer")
                     }
                 }
