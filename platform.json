@@ -81,7 +81,7 @@
       "type": "framework",
       "optional": true,
       "owner": "bmourit",
-      "version": "https://github.com/bmourit/ArduinoCore-GD32.git"
+      "version": "https://github.com/bmourit/ArduinoCore-GD32/archive/refs/heads/GD32_Marlin_Dev.zip"
     },
     "framework-wifi-sdk-gd32": {
       "type": "framework",
