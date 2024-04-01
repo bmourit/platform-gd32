@@ -23,6 +23,7 @@ from SCons.Script import (ARGUMENTS, COMMAND_LINE_TARGETS, AlwaysBuild,
 
 from platformio.public import list_serial_ports
 
+IS_WINDOWS = sys.platform.startswith("win")
 
 def BeforeUpload(target, source, env):  # pylint: disable=W0613,W0621
     env.AutodetectUploadPort()
@@ -286,7 +287,7 @@ elif upload_protocol.startswith("jlink"):
 
     env.Replace(
         __jlink_cmd_script=_jlink_cmd_script,
-        UPLOADER="JLink.exe" if system() == "Windows" else "JLinkExe",
+        UPLOADER="JLink.exe" if IS_WINDOWS else "JLinkExe",
         UPLOADERFLAGS=[
             "-device", board.get("debug", {}).get("jlink_device"),
             "-speed", env.GetProjectOption("debug_speed", "4000"),
