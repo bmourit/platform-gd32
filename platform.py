@@ -32,9 +32,10 @@ class Gd32Platform(PlatformBase):
 
         frameworks = variables.get("pioframework", [])
         if "arduino" in frameworks:
-                self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.90201.0"
+                self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.90301.2"
                 if build_core == "gd32":
                     self.packages["framework-arduinogd32"]["optional"] = False
+
         if "mbed" in frameworks:
             deprecated_boards_file = os.path.join(
                 self.get_dir(), "misc", "mbed_deprecated_boards.json")
@@ -42,7 +43,8 @@ class Gd32Platform(PlatformBase):
                 with open(deprecated_boards_file) as fp:
                     if board in json.load(fp):
                         self.packages["framework-mbed"]["version"] = "~6.51506.0"
-            self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.90201.0"
+            self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.90301.2"
+
         if "wifi-sdk" in frameworks:
             self.packages["tool-sreccat"]["optional"] = False
 

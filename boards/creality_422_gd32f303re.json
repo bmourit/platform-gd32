@@ -2,6 +2,7 @@
   "build": {
     "core": "gd32",
     "cpu": "cortex-m4",
+    "offset": "0x7000",
     "extra_flags": "-DGD32F3 -DGD32F303 -DGD32F30x -DGD32F30X_HD -DGD32F303RE -DARDUINO_ARCH_GD32",
     "f_cpu": "120000000L",
     "mcu": "gd32f303ret6",
@@ -29,11 +30,12 @@
     ],
     "openocd_extra_pre_target_args": [
       "-c",
-      "set CPUTAPID 0x2ba01477"
+      "set CPUTAPID 0x2BA01477"
     ]
   },
   "frameworks": [
-    "arduino"
+    "arduino",
+    "spl"
   ],
   "name": "Creality 4.2.2 GD32F303RE (64k RAM, 512k Flash)",
   "upload": {
@@ -53,6 +55,6 @@
     "use_1200bps_touch": false,
     "wait_for_upload_port": false
   },
-  "url": "https://www.gigadevice.com/microcontroller/gd32f303ret6/",
+  "url": "https://www.gigadevice.com/microcontroller/gd32f303ret6",
   "vendor": "GigaDevice"
 }

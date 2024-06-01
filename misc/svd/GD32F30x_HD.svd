@@ -7,8 +7,8 @@
     <name>CM4</name>
     <revision>r2p1</revision>
     <endian>little</endian>
-    <mpuPresent>1</mpuPresent>
-    <fpuPresent>1</fpuPresent>
+    <mpuPresent>0</mpuPresent>
+    <fpuPresent>0</fpuPresent>
     <nvicPrioBits>4</nvicPrioBits>
     <vendorSystickConfig>0</vendorSystickConfig>
   </cpu> 
